@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set the setterand getter</title>
+</head>
+<p id="gvp"></p>
+<body>
+    <script>
+        class person{
+            constructor(name,phone){
+                this.pname=name;
+                this.mobile_num=phone;
+            } getpersondetails(){
+                console.log("name:",this.pname,"mobilenum:",this.mobile_num);
+            }
+        }
+        class employee extends person{
+           constructor(n,p,s,c){
+            super(n,p)
+            this.salary=s;
+            this.company=c;
+           }
+  
+
+        }
+        p1 = new person("gopi","9553517897")
+        e1= new employee("ashok","9618235468","45000","sentios")
+    </script>
+    
+</body>
+</html>
